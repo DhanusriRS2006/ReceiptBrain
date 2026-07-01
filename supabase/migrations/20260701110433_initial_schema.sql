@@ -1,4 +1,4 @@
--- 20240701125930_initial_schema.sql
+-- 20260701110433_initial_schema.sql
 
 CREATE EXTENSION IF NOT EXISTS vector;
 
