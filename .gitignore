@@ -1,0 +1,9 @@
+.env
+token.pickle
+gmail_credentials.json
+__pycache__/
+*.pyc
+venv/
+node_modules/
+/frontend/build/
+.DS_Store
