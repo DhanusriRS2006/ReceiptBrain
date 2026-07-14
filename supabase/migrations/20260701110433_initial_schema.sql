@@ -1,6 +1,10 @@
 -- 20260701110433_initial_schema.sql
+-- Enable pgvector extension for AI embeddings
 
 CREATE EXTENSION IF NOT EXISTS vector;
+-- Users table
+-- Supabase Auth handles actual login
+-- This table stores extra user info
 
 CREATE TABLE users (
   id UUID PRIMARY KEY REFERENCES auth.users(id),
@@ -8,6 +12,8 @@ CREATE TABLE users (
   created_at TIMESTAMP DEFAULT NOW()
 );
 
+-- Receipts table
+-- Stores raw receipt data before agent processing
 CREATE TABLE receipts (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID REFERENCES users(id),
@@ -17,6 +23,9 @@ CREATE TABLE receipts (
   created_at TIMESTAMP DEFAULT NOW()
 );
 
+-- Expenses table
+-- Stores structured data after agent processing
+-- embedding column stores 768-dimensional vector for semantic search
 CREATE TABLE expenses (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   receipt_id UUID REFERENCES receipts(id),
@@ -32,6 +41,8 @@ CREATE TABLE expenses (
   created_at TIMESTAMP DEFAULT NOW()
 );
 
+-- Anomalies table
+-- Stores flags from Anomaly Detector Agent
 CREATE TABLE anomalies (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID REFERENCES users(id),
@@ -42,6 +53,8 @@ CREATE TABLE anomalies (
   resolved BOOLEAN DEFAULT FALSE
 );
 
+-- Insights table
+-- Stores monthly summaries from Insight Agent
 CREATE TABLE insights (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID REFERENCES users(id),
