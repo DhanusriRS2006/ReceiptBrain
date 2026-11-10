@@ -12,7 +12,7 @@ The application combines **Gemini, CrewAI, Groq, MiniLM, pgvector, FastAPI, Reac
 
 ## Application Preview
 
-![ReceiptBrain Dashboard](docs/screenshots/dashboard.png)
+![ReceiptBrain Dashboard](docs/screenshots/Dashboard.png)
 
 The dashboard provides an overview of monthly spending, transaction history, category distribution, and spending patterns.
 
