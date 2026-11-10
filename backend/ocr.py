@@ -42,7 +42,7 @@ parse_confidence is 0.5-0.7 when blurry or ambiguous."""
 
 # ---------- model call ----------
 def _chat(messages, model):
-    kwargs = dict(model=model, messages=messages, max_tokens=1500, temperature=0)
+    kwargs = dict(model=model, messages=messages, max_tokens=800, temperature=0)
     try:
         return client.chat.completions.create(
             **kwargs, response_format={"type": "json_object"},

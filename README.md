@@ -18,9 +18,33 @@ ReceiptBrain has a React frontend and a FastAPI backend. It extracts receipt det
 
 The Upload page includes two sample restaurant bills (₹441 and ₹420). **Analyzing a sample currently saves it as a real expense**, so repeated demos can create duplicate entries.
 
-## Screenshots
 
-_Add screenshots of Upload, Dashboard, Search, and Alerts here after your final UI pass._
+## Application Screenshots
+
+### Expense Dashboard
+![Expense Dashboard](docs/screenshots/dashboard.png)
+
+### AI Receipt Extraction
+![Gemini Receipt Extraction](docs/screenshots/receipt-extraction.png)
+
+### CrewAI Insights & Spending Forecast
+![AI Insights](docs/screenshots/crewai-insights.png)
+
+### Semantic Expense Search
+![Semantic Search](docs/screenshots/semantic-search.png)
+
+### Anomaly Detection
+![Anomaly Alerts](docs/screenshots/anomalies.png)
+
+### Spending Trends
+![Spending Trends](docs/screenshots/trends.png)
+
+### Manual Expense Entry
+![Add Expense](docs/screenshots/add-expense.png)
+
+### Receipt Upload & Gmail Integration
+![Receipt Upload](docs/screenshots/upload.png)
+
 
 ## Stack
 
