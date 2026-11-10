@@ -22,28 +22,28 @@ The Upload page includes two sample restaurant bills (₹441 and ₹420). **Anal
 ## Application Screenshots
 
 ### Expense Dashboard
-![Expense Dashboard](docs/screenshots/dashboard.png)
+![Expense Dashboard](docs/screenshots/Dashboard.png)
 
 ### AI Receipt Extraction
-![Gemini Receipt Extraction](docs/screenshots/receipt-extraction.png)
+![Gemini Receipt Extraction](docs/screenshots/Gemini OCR Result.png)
 
 ### CrewAI Insights & Spending Forecast
-![AI Insights](docs/screenshots/crewai-insights.png)
+![AI Insights](docs/screenshots/CrewAI Insights & Forecast.png)
 
 ### Semantic Expense Search
-![Semantic Search](docs/screenshots/semantic-search.png)
+![Semantic Search](docs/screenshots/Semantic Search.png)
 
 ### Anomaly Detection
-![Anomaly Alerts](docs/screenshots/anomalies.png)
+![Anomaly Alerts](docs/screenshots/Anomaly Alerts.png)
 
 ### Spending Trends
-![Spending Trends](docs/screenshots/trends.png)
+![Spending Trends](docs/screenshots/Spending Trends.png)
 
 ### Manual Expense Entry
-![Add Expense](docs/screenshots/add-expense.png)
+![Add Expense](docs/screenshots/Add Expense.png)
 
 ### Receipt Upload & Gmail Integration
-![Receipt Upload](docs/screenshots/upload.png)
+![Receipt Upload](docs/screenshots/Receipt Upload.png)
 
 
 ## Stack
