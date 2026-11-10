@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+python-multipart
+supabase
+python-dotenv
+openai
+pillow
+beautifulsoup4
+numpy
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+sentence-transformers
+crewai[litellm]
+groq
